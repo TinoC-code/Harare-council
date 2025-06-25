@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harare Council | Waste Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Harare_City_Council_logo.svg/1200px-Harare_City_Council_logo.svg.png" alt="Harare Council Logo">
+                <div>
+                    <h1>Harare City Council</h1>
+                    <span>Waste Management Solutions</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#report">Report Issue</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Keeping Harare Clean Together</h2>
+            <p>Report uncollected garbage and help us improve our waste management services. Your complaints help us serve you better.</p>
+            <a href="#report" class="btn">Report Now</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+    </section>
+
+    <section class="features" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Waste Management Services</h2>
+                <p>We are committed to providing efficient waste collection and maintaining a clean environment for all Harare residents.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                    <h3>Regular Collections</h3>
+                    <p>Weekly garbage collection services across all suburbs of Harare according to scheduled days.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Recycling Programs</h3>
+                    <p>Community recycling initiatives to reduce landfill waste and promote sustainability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated hotline for reporting missed collections and other waste-related issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="report-section" id="report">
+        <div class="container">
+            <div class="report-container">
+                <div class="report-image">
+                    <img src="https://i.imgur.com/3ORC9u3.jpeg" alt="Uncollected garbage in Harare">
+                </div>
+                <div class="report-form">
+                    <h2>Report Uncollected Garbage</h2>
+                    <form id="garbageForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="suburb">Suburb</label>
+                            <select id="suburb" name="suburb" required>
+                                <option value="">Select your suburb</option>
+                                <option value="avondale">Avondale</option>
+                                <option value="borrowdale">Borrowdale</option>
+                                <option value="budiriro">Budiriro</option>
+                                <option value="chitungwiza">Chitungwiza</option>
+                                <option value="epworth">Epworth</option>
+                                <option value="greendale">Greendale</option>
+                                <option value="hatfield">Hatfield</option>
+                                <option value="highfield">Highfield</option>
+                                <option value="kambuzuma">Kambuzuma</option>
+                                <option value="mabelreign">Mabelreign</option>
+                                <option value="mbare">Mbare</option>
+                                <option value="mount_pleasant">Mount Pleasant</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="issue">Describe the Issue</label>
+                            <textarea id="issue" name="issue" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit Report</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#report">Report Issue</a>
+                <a href="#about">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Harare City Council. All Rights Reserved.</p>
+                <p>Developed by Tino, Ano, and Laura</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Waste Management Assistant</h3>
+                <button class="chatbot-close" id="chatbotClose">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    Hello! I'm your Harare Waste Management assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Type your question...">
+                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
